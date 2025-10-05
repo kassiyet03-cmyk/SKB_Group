@@ -34,6 +34,18 @@ body {
     letter-spacing: 1px;
 }
 
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 35px;  /* Smaller on mobile */
+    }
+}
+
 .navbar-nav .nav-link {
     font-weight: 500;
     transition: color 0.3s ease;
