@@ -601,6 +601,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const valvesPane = document.getElementById('valves');
     const stationsPane = document.getElementById('stations');
     
+    // Check URL hash and switch to appropriate tab
+    if (window.location.hash === '#stations') {
+        stationsTab.click();
+    }
+    
     // Set total count
     totalCount.textContent = equipmentItems.length;
     
