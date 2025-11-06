@@ -98,21 +98,125 @@
         <!-- Navigation Tabs -->
         <ul class="nav nav-tabs nav-fill mb-4" id="productTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active fw-bold" id="valves-tab" data-bs-toggle="tab" data-bs-target="#valves" type="button" role="tab">
-                    Предохранительные клапаны
+                <button class="nav-link active fw-bold" id="stations-tab" data-bs-toggle="tab" data-bs-target="#stations" type="button" role="tab">
+                    Компрессорные станции
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link fw-bold" id="stations-tab" data-bs-toggle="tab" data-bs-target="#stations" type="button" role="tab">
-                    Компрессорные станции
+                <button class="nav-link fw-bold" id="valves-tab" data-bs-toggle="tab" data-bs-target="#valves" type="button" role="tab">
+                    Предохранительные клапаны
                 </button>
             </li>
         </ul>
 
         <!-- Tab Content -->
         <div class="tab-content" id="productTabContent">
+            <!-- Compressor Stations Tab -->
+            <div class="tab-pane fade show active" id="stations" role="tabpanel">
+                <div id="stationsContainer">
+                    <!-- Single Featured Compressor Station -->
+                    <div class="equipment-item" data-keywords="модульная компрессорная станция винтовой компрессор производительность давление автоматизация контроль осушитель ресивер мобильная промышленность строительство нефтегазовая отрасль энергетика казахстан отечественный">
+                        <!-- Hero Header -->
+                        <div class="text-center mb-5">
+                            <h1 class="display-4 fw-bold text-primary mb-3">Модульные Компрессорные Станции</h1>
+                            <p class="lead text-muted mb-2">Отечественный товаропроизводитель на территории Республики Казахстан</p>
+                            <p class="text-muted">Высокотехнологичные решения для промышленного сжатия воздуха с полным циклом производства</p>
+                        </div>
+                        
+                        <!-- Photo Gallery Section -->
+                        <div class="row g-4 mb-5">
+                            <div class="col-lg-8">
+                                <div class="position-relative">
+                                    <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_c6446e28.jpg') }}" 
+                                         class="img-fluid rounded-3 shadow-lg" 
+                                         alt="Модульная компрессорная станция - основной вид"
+                                         style="width: 100%; height: 500px; object-fit: cover; background: #f8f9fa; border: 2px solid #dee2e6;">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_8cef0aad.jpg') }}" 
+                                             class="img-fluid rounded-3 shadow" 
+                                             alt="Компрессорная станция - вид 2"
+                                             style="width: 100%; height: 490px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Photos Row -->
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_cecb5c23.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - детали"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_1b930adb.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - панель управления"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_36fbb76d.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - установка"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                        </div>
+                        
+                        <!-- Third Photos Row - Additional Images -->
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_9d5c1a24.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - компоненты"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_a0a60556.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - детальный вид"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_e6d05ec3.jpg') }}" 
+                                     class="img-fluid rounded-3 shadow" 
+                                     alt="Компрессорная станция - оборудование"
+                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
+                            </div>
+                        </div>
+                        
+                        <!-- Detailed Description Section -->
+                        <div class="bg-white rounded-3 shadow-sm p-5 mb-5">
+                            <h2 class="text-primary mb-4">О продукции</h2>
+                            <p class="lead mb-4">
+                                Модульные компрессорные станции SKB GROUP представляют собой полнофункциональные установки для выработки сжатого воздуха, 
+                                размещенные в транспортабельном контейнере. Все оборудование смонтировано, подключено и протестировано на заводе-изготовителе.
+                            </p>
+                            <p class="mb-4">
+                                Наши станции производятся на территории Республики Казахстан с использованием современных технологий и высококачественных 
+                                компонентов от ведущих мировых производителей. Модульная конструкция обеспечивает быструю установку, легкое обслуживание 
+                                и возможность транспортировки в любую точку страны.
+                            </p>
+                            <p class="mb-4">
+                                Станции оснащены системой автоматического управления, которая обеспечивает оптимальную работу оборудования, контроль 
+                                всех параметров и защиту от аварийных ситуаций. Встроенная система мониторинга позволяет отслеживать состояние 
+                                оборудования в режиме реального времени.
+                            </p>
+                            <p class="mb-0">
+                                Каждая станция изготавливается под конкретные требования заказчика с учетом климатических условий эксплуатации, 
+                                требуемой производительности и особенностей технологического процесса.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Safety Valves Tab -->
-            <div class="tab-pane fade show active" id="valves" role="tabpanel">
+            <div class="tab-pane fade" id="valves" role="tabpanel">
                 <div id="valvesContainer">
         <!-- LGS Pressure Relief Valves -->
         <div class="row align-items-center mb-5 equipment-item" data-keywords="lgs hi-flow предохранительный клапан rock-seal высокий поток закрытый выпускной резьбовые соединения большие выходы модульная конструкция газ воздух природный кпг спг медицинские технические co2 аммиачное криогенные сжиженные сосуды давление">
@@ -448,110 +552,6 @@
                 </div>
             </div>
             
-            <!-- Compressor Stations Tab -->
-            <div class="tab-pane fade" id="stations" role="tabpanel">
-                <div id="stationsContainer">
-                    <!-- Single Featured Compressor Station -->
-                    <div class="equipment-item" data-keywords="модульная компрессорная станция винтовой компрессор производительность давление автоматизация контроль осушитель ресивер мобильная промышленность строительство нефтегазовая отрасль энергетика казахстан отечественный">
-                        <!-- Hero Header -->
-                        <div class="text-center mb-5">
-                            <h1 class="display-4 fw-bold text-primary mb-3">Модульные Компрессорные Станции</h1>
-                            <p class="lead text-muted mb-2">Отечественный товаропроизводитель на территории Республики Казахстан</p>
-                            <p class="text-muted">Высокотехнологичные решения для промышленного сжатия воздуха с полным циклом производства</p>
-                        </div>
-                        
-                        <!-- Photo Gallery Section -->
-                        <div class="row g-4 mb-5">
-                            <div class="col-lg-8">
-                                <div class="position-relative">
-                                    <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_c6446e28.jpg') }}" 
-                                         class="img-fluid rounded-3 shadow-lg" 
-                                         alt="Модульная компрессорная станция - основной вид"
-                                         style="width: 100%; height: 500px; object-fit: cover; background: #f8f9fa; border: 2px solid #dee2e6;">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_8cef0aad.jpg') }}" 
-                                             class="img-fluid rounded-3 shadow" 
-                                             alt="Компрессорная станция - вид 2"
-                                             style="width: 100%; height: 490px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Additional Photos Row -->
-                        <div class="row g-4 mb-5">
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.33_cecb5c23.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - детали"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_1b930adb.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - панель управления"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_36fbb76d.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - установка"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                        </div>
-                        
-                        <!-- Third Photos Row - Additional Images -->
-                        <div class="row g-4 mb-5">
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_9d5c1a24.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - компоненты"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_a0a60556.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - детальный вид"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{ url_for('static', filename='images/equipment/WhatsApp Image 2025-10-02 at 16.47.34_e6d05ec3.jpg') }}" 
-                                     class="img-fluid rounded-3 shadow" 
-                                     alt="Компрессорная станция - оборудование"
-                                     style="width: 100%; height: 250px; object-fit: cover; background: #f8f9fa; border: 1px solid #dee2e6;">
-                            </div>
-                        </div>
-                        
-                        <!-- Detailed Description Section -->
-                        <div class="bg-white rounded-3 shadow-sm p-5 mb-5">
-                            <h2 class="text-primary mb-4">О продукции</h2>
-                            <p class="lead mb-4">
-                                Модульные компрессорные станции SKB GROUP представляют собой полнофункциональные установки для выработки сжатого воздуха, 
-                                размещенные в транспортабельном контейнере. Все оборудование смонтировано, подключено и протестировано на заводе-изготовителе.
-                            </p>
-                            <p class="mb-4">
-                                Наши станции производятся на территории Республики Казахстан с использованием современных технологий и высококачественных 
-                                компонентов от ведущих мировых производителей. Модульная конструкция обеспечивает быструю установку, легкое обслуживание 
-                                и возможность транспортировки в любую точку страны.
-                            </p>
-                            <p class="mb-4">
-                                Станции оснащены системой автоматического управления, которая обеспечивает оптимальную работу оборудования, контроль 
-                                всех параметров и защиту от аварийных ситуаций. Встроенная система мониторинга позволяет отслеживать состояние 
-                                оборудования в режиме реального времени.
-                            </p>
-                            <p class="mb-0">
-                                Каждая станция изготавливается под конкретные требования заказчика с учетом климатических условий эксплуатации, 
-                                требуемой производительности и особенностей технологического процесса.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <!-- No Results Message -->
             <div id="noResults" class="text-center py-5" style="display: none;">
                 <div class="bg-white p-5 rounded-3 shadow-sm mx-auto" style="max-width: 500px;">
@@ -602,8 +602,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const stationsPane = document.getElementById('stations');
     
     // Check URL hash and switch to appropriate tab
-    if (window.location.hash === '#stations') {
-        stationsTab.click();
+    if (window.location.hash === '#valves') {
+        valvesTab.click();
     }
     
     // Set total count
